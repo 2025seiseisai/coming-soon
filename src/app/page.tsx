@@ -2,7 +2,7 @@ import Image from "next/image";
 import BackgroundImage from "./bg.webp";
 export default function Home() {
     return (
-        <div style={{ width: "100vw", height: "100vh" }}>
+        <div style={{ width: "100svw", height: "100svh" }}>
             <Image
                 src={BackgroundImage}
                 alt="Background"
