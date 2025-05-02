@@ -7,7 +7,7 @@ async fn redirect(req: HttpRequest) -> impl Responder {
     let now_jst = Utc::now().with_timezone(&Tokyo);
 
     // 閾値（JST）
-    let threshold = Tokyo.with_ymd_and_hms(2025, 5, 2, 18, 1, 0).unwrap();
+    let threshold = Tokyo.with_ymd_and_hms(2025, 5, 14, 15, 0, 0).unwrap();
 
     // リダイレクト先ベースURL
     let base_url = if now_jst < threshold {
